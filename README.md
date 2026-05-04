@@ -91,4 +91,4 @@ bash ./html_cleaner ./remove_numbers ./remove_punctuation ./remove_arabic_diacri
 
 ## 👨‍💻 Author
 
-Mohammad Nak
+Mohammad Nakhleh
