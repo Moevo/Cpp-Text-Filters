@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قصة الحكيم والفتى</title>
+    <style>
+        body {
+        font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+        line-height: 2;
+        color: #333;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+        color: #8b4513;
+        text-align: center;
+        border-bottom: 2px dashed #8b4513;
+        padding-bottom: 10px;
+    }
+    .story-text {
+        font-size: 24px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+    .stats {
+        background: #eef7fa;
+        padding: 20px;
+        border-radius: 8px;
+        border-right: 5px solid #008CBA;
+    }
+    .stats h3 {
+        color: #006b8f;
+        margin-top: 0;
+    }
+    .highlight {
+        color: #d35400;
+        font-weight: bold;
+    }
+    </style>
+    <script>
+
+
+
+        const setupThemeToggle = () => {
+            const themeBtn = document.getElementById('theme-toggle-btn');
+
+
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-theme');
+            });
+        };
+
+
+        const calculateWordCount = () => {
+            const storyContent = document.getElementById('story-content');
+            const wordCountDisplay = document.getElementById('dynamic-word-count');
+
+            const text = storyContent.textContent || storyContent.innerText;
+
+
+
+            const wordsArray = text.trim().split(/\s+/);
+
+            const filteredWords = wordsArray.filter(word => word.length > 0 && word !== "،" && word !== "." && word !== "!");
+
+
+            wordCountDisplay.textContent = filteredWords.length;
+        };
+
+
+        const initApp = () => {
+            setupThemeToggle();
+            calculateWordCount();
+        };
+
+
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
+
+</head>
+<body>
+
+   <div class="container">
+        <h1>قِصَّةُ السَّنْدَيَانَةِ وَالْفَتَى</h1>
+        
+        <div class="story-text">
+            <p>فِي قَرْيَةٍ نَائِيَةٍ، تَقَعُ بَيْنَ <strong>3</strong> جِبَالٍ شَاهِقَةٍ، عَاشَ حَكِيمٌ <span class="highlight">مُخَضْرَمٌ</span>. كَانَ عُمْرُهُ يَتَجَاوَزُ <strong>85</strong> عَاماً.</p>
+            
+            <p>ذَاتَ يَوْمٍ مُشْمِسٍ، قَصَدَهُ فَتًى يَافِعٌ؛ يَبْدُو عَلَيْهِ <span class="highlight">الْوُجُومُ</span>! قَالَ الْفَتَى مُتَنَهِّداً: "يَا سَيِّدِي... لَقَدْ حَاوَلْتُ <strong>10</strong> مَرَّاتٍ أَنْ أُتْقِنَ حِرْفَةَ النِّجَارَةِ، وَلَكِنَّنِي أَخْفَقْتُ <span class="highlight">ذَرِيعاً</span>."</p>
+            
+            <p>أَجَابَهُ الْحَكِيمُ <span class="highlight">بِرَوِيَّةٍ</span>، وَهُوَ يَرْتَشِفُ قَهْوَتَهُ: "يَا بُنَيَّ، هَلْ تَرَى تِلْكَ <span class="highlight">السَّنْدَيَانَةَ</span> الْعَتِيقَةَ؟ لَقَدْ صَمَدَتْ فِي وَجْهِ الرِّيَاحِ لِأَكْثَرَ مِنْ <strong>150</strong> سَنَةً. إِنَّهَا لَمْ تَنْمُ فِي لَيْلَةٍ وَضُحَاهَا؛ بَلْ <span class="highlight">تَسَرْبَلَتْ</span> بِالصَّبْرِ، <span class="highlight">وَاسْتَسْقَتْ</span> مِنَ التَّجَارِبِ."</p>
+        </div>
+
+        <div class="stats">
+            <h3>إحصائيات وتحليل القصة:</h3>
+            <ul>
+                <li><strong>عدد الكلمات:</strong> 75 كلمة (باعتبار الأرقام والكلمات المفصولة بمسافات كنصوص مستقلة).</li>
+                <li><strong>الأرقام:</strong> 3، 85، 10، 150.</li>
+                <li><strong>علامات الترقيم المستخدمة:</strong> الفاصلة (،)، النقطة (.)، علامة التعجب (!)، علامة الاستفهام (؟)، النقطتان الرأسيتان (:)، علامات التنصيص (" ")، الفاصلة المنقوطة (؛)، وعلامة الحذف (...).</li>
+                <li><strong>التشكيل:</strong> تم وضع الحركات (الفتحة، الضمة، الكسرة، السكون، التنوين، الشدة) على جميع أحرف القصة تقريباً.</li>
+                <li><strong>كلمات التوقف (Stop Words):</strong> فِي، بَيْنَ، كَانَ، ذَاتَ، عَلَيْهِ، يَا، لَقَدْ، أَنْ، وَلَكِنَّنِي، وَهُوَ، هَلْ، تِلْكَ، مِنْ، لَمْ، بَلْ.</li>
+                <li><strong>كلمات فريدة وقوية (ملونة بالبرتقالي في النص):</strong> 
+                    <ul>
+                        <li><em>مُخَضْرَمٌ</em>: صاحب خبرة طويلة.</li>
+                        <li><em>الْوُجُومُ</em>: السكوت من شدة الهم أو الحزن.</li>
+                        <li><em>ذَرِيعاً</em>: شديداً أو فادحاً (إخفاق ذريع).</li>
+                        <li><em>بِرَوِيَّةٍ</em>: بتمهل وتأنٍ.</li>
+                        <li><em>السَّنْدَيَانَةَ</em>: شجرة البلوط القوية.</li>
+                        <li><em>تَسَرْبَلَتْ</em>: لبست وتغطت.</li>
+                        <li><em>وَاسْتَسْقَتْ</em>: طلبت السقيا وارتوت.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
